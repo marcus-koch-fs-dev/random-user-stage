@@ -1,0 +1,27 @@
+@import '../../assets/sass/base';
+
+// Single image card
+.imageCard {
+  &-container {
+    width: $width_card;
+    height: $height_card;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: $background-color-tertiary;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-family: $font-family-LibreBaskerville;
+    color: $font-color-primary;
+  }
+
+  &__img {
+    width: 60%;
+    height: 50%;
+    border: 0.1em solid $background-color-userCard_img-border;
+  }
+}

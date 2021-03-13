@@ -1,0 +1,18 @@
+@import '../../assets/sass/_base.scss';
+
+// Landing page
+.footer {
+  background-color: $background-color-primary;
+  color: $font-color-secondary;
+  font-family: $font-family-OpenSans;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

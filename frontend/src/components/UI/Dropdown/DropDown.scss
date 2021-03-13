@@ -1,0 +1,68 @@
+@import '../../../assets/sass/base';
+
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__btn {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 8.5em;
+    height: 2.5em;
+    border-radius: 2em;
+    margin: 0 1em;
+    padding: 0;
+    border: none;
+    outline: none;
+    color: $font-color-tertiary;
+    font-size: $font-size-button-home;
+    background-color: $background-color-button;
+  }
+
+  // Holds a list of items
+  &__children {
+    font-family: $font-family-OpenSans;
+    position: absolute;
+    font-size: $font-size-button-home;
+    top: 2.5em;
+    width: 6.5em;
+
+    z-index: 1;
+    background-color: whitesmoke;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__item {
+    border-bottom: solid 0.1em $font-color-tertiary;
+  }
+
+  // Make list visible
+  &:hover {
+    .dropdown {
+      &__btn {
+        background-color: $background-color-button-active;
+      }
+
+      &__children {
+        display: flex;
+      }
+
+      &__item {
+        &:hover {
+          cursor: pointer;
+          color: $font-color-secondary;
+          background-color: $background-color-hover;
+        }
+      }
+    }
+  }
+}

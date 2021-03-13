@@ -1,0 +1,84 @@
+@import '../../assets/sass/base';
+
+// Cards container
+.user {
+  &List {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__box {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    &__list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    &__item {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__loader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &Control {
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin: 1em;
+    }
+
+    &__item {
+      margin: 0.5em;
+      display: flex;
+    }
+
+    &__btn {
+      width: 8.5em;
+      height: 2.5em;
+      border-radius: 2em;
+      margin: 0 1em;
+      padding: 0;
+      border: none;
+      outline: none;
+      color: $font-color-tertiary;
+      font-size: $font-size-button-home;
+      background-color: $background-color-button;
+
+      &:active {
+        background-color: $background-color-button-active;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .user {
+    &List {
+      &__list {
+        border: $font-color-primary 0.1em solid;
+      }
+    }
+  }
+}

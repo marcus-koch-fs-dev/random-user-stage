@@ -1,0 +1,59 @@
+@import '../../assets/sass/base';
+
+// Single user card
+.userCard {
+  &-container {
+    display: block;
+    text-align: center;
+    width: $width_card;
+    height: $height_card;
+
+    background: $background-color-tertiary;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    // margin: 1em;
+
+    font-size: 1.2em;
+    font-family: $font-family-LibreBaskerville;
+  }
+
+  // Header color
+  &__mask-top {
+    &__male {
+      @include cardSize;
+      background-color: $background-color-userCard_mask-male;
+    }
+    &__female {
+      @include cardSize;
+      background-color: $background-color-userCard_mask-female;
+    }
+  }
+
+  &__img {
+    size: 65px;
+    border-radius: 50%;
+    border: 0.1em solid $background-color-userCard_img-border;
+    margin: 1em 0;
+  }
+
+  &__divider {
+    &-box {
+      display: flex;
+      justify-content: center;
+    }
+    &-stroke {
+      width: 8em;
+      border-top: 1px solid $background-color-userCard_divider-stroke;
+      border-radius: 50%;
+    }
+  }
+
+  &__ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    li {
+      line-height: 2.2em;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../assets/sass/_base.scss';
+
+// Landing page header
+.header {
+  background-color: $background-color-primary;
+  color: $font-color-primary;
+  font-family: $font-family-OpenSans;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

@@ -1,0 +1,59 @@
+@import '../../assets/sass/_base.scss';
+
+// Webpage home appearance
+.homePage {
+  background-color: $background-color-tertiary;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 8% auto 3%;
+  grid-template-areas:
+    'head head head'
+    'p p p'
+    'foot foot foot';
+  row-gap: 2em;
+  height: 100%;
+
+  // Header
+  &__header {
+    grid-area: head;
+  }
+
+  // Particles js wrapper
+  &__particles {
+    grid-area: p;
+    position: relative;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-areas: '. user .';
+
+    // User List
+    .homePage {
+      &__user {
+        grid-area: user;
+        z-index: 1; // Layer on top of Particles js
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+  }
+
+  // Footer
+  &__footer {
+    grid-area: foot;
+  }
+
+  @include mobile {
+    .homePage {
+      &__buttons {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      &__particles {
+        grid-template-columns: 15% auto 15%;
+      }
+    }
+  }
+}

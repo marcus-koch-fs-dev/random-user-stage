@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+@import './mixins';
+@import './reset';
+
+// --- Standard properties ---
+// Breakpoints media devices: max sizes
+$mobile: 425px; //360 small mobile
+$tablet: 768px;
+$laptop: 1240px;
+$desktop-lg: 1800px;
+
+// Background-colors
+$background-color-primary: darkmagenta;
+$background-color-secondary: rgb(81, 209, 252);
+$background-color-tertiary: white;
+
+// Font colors
+$font-color-primary: black;
+$font-color-secondary: white;
+$font-color-tertiary: darkmagenta;
+$font-color-hover: yellow;
+
+// Special colors
+//    Page: Home > User cards
+$background-color-userCard_mask-male: #89c6ff;
+$background-color-userCard_mask-female: #ff89ff;
+$background-color-userCard_img-border: grey;
+$background-color-userCard_divider-stroke: lightgrey;
+$background-color-button: rgb(196, 194, 194);
+$background-color-button-active: rgb(30, 183, 210);
+$background-color-hover: $background-color-primary;
+
+//  Sizes
+$height__scroll-box: 75vh;
+$height_card: 30rem;
+$width_card: 20rem;
+
+// Font families
+$font-family-OpenSans: 'Open Sans', sans-serif;
+$font-family-LibreBaskerville: 'Libre Baskerville', sans-serif;
+
+// Font sizes
+$font-size-h1: 3em;
+$font-size-h2: 1.5em;
+$font-size-h3: 1.2em;
+$font-size-button-home: 1.8em;
+
+h1 {
+  font-size: $font-size-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+}
+
+a:active,
+a:visited,
+a:link {
+  text-decoration: none;
+}
+
+/* ------------------ */
+/* MEDIA BREAKPOINTS */
+/* ------------------ */
+@media screen and (min-width: 1920px) {
+  :root {
+    $font-size-test: 18px;
+  }
+}
+
+@media screen and (max-width: 850px) and (min-width: 401px) {
+  :root {
+    $font-size-test: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  :root {
+    $font-size-test: 11px;
+  }
+}

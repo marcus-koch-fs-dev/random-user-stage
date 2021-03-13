@@ -1,0 +1,11 @@
+@import '../../assets/sass/base';
+
+// Scroll vertical content
+.scroll-wrapper {
+  height: $height__scroll-box;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  text-overflow: clip;
+  overflow-y: scroll;
+}
