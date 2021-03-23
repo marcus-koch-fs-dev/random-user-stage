@@ -9,7 +9,7 @@ import ImageCard from '../ImageCard/ImageCard'
 import './UsersHooks.scss'
 
 // Receive & display list of user
-const UsersHook = (props) => {
+const UsersHook = () => {
   const amount = 5
   const URL = 'https://randomuser.me/api/?&results=50'
   const [data, setData] = useState({ results: [] })
