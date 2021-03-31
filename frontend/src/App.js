@@ -1,7 +1,7 @@
 import './App.scss'
 import Home from './pages/home/Home'
 
-function App() {
+const App = () => {
   return (
     <div className='app'>
       <Home />
